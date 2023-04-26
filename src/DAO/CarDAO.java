@@ -354,15 +354,15 @@ public class CarDAO {
 				
 				vo.setOrderid(rs.getInt("ORDERID")); //예약 ID
 				vo.setCarqty(rs.getInt("CARQTY")); //대여 수량
-				vo.setCarreserveday(rs.getInt(4));// 대여 기간 
-				vo.setCarbegindate(rs.getString(5));//대여 시작 날짜
-				vo.setCarins(rs.getInt(6));		//보험 옵션 적용 여부 
-				vo.setCarwifi(rs.getInt(7));	//무선WIFI 옵션 적용 여부 
-				vo.setCarnave(rs.getInt(8));	//네비 옵션 적용 여부 
-				vo.setCarbabyseat(rs.getInt(9));// 베이비 시트 옵션 적용 여부 
-				vo.setCarname(rs.getString(12)); //예약한 차량명
-				vo.setCarprice(rs.getInt(14));//예약한 차량 하루 예약 가격
-				vo.setCarimg(rs.getString(17)); //예약한 차량 이미지 명 
+				vo.setCarreserveday(rs.getInt("CARRESERVEDAY"));// 대여 기간 
+				vo.setCarbegindate(rs.getString("CARBEGINDATE"));//대여 시작 날짜
+				vo.setCarins(rs.getInt("CARINS"));		//보험 옵션 적용 여부 
+				vo.setCarwifi(rs.getInt("CARWIFI"));	//무선WIFI 옵션 적용 여부 
+				vo.setCarnave(rs.getInt("CARNAVE"));	//네비 옵션 적용 여부 
+				vo.setCarbabyseat(rs.getInt("CARBABYSEAT"));// 베이비 시트 옵션 적용 여부 
+				vo.setCarname(rs.getString("CARNAME")); //예약한 차량명
+				vo.setCarprice(rs.getInt("CARPRICE"));//예약한 차량 하루 예약 가격
+				vo.setCarimg(rs.getString("CARIMG")); //예약한 차량 이미지 명 
 				
 						
 				//백터 배열에 VO추가

@@ -179,7 +179,7 @@ String memberId = membervo.getId();//로그인한 사람 아이디(글작성자 아이디)
 			event.preventDefault();//a태그의 href기본이벤트 차단
 			
 			//board테이블에 저장된 글을 조회 하는 요청!
-			location.href = "/CarProject_/board1/list.bo?nowPage=<%=nowPage%>&nowBlock=<%=nowBlock%>";
+			location.href = "<%=contextPath%>/board1/list.bo?nowPage=<%=nowPage%>&nowBlock=<%=nowBlock%>";
 			
 		});
 	
